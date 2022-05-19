@@ -2657,7 +2657,7 @@ margin-top:20px;}
     letter-spacing: 0px;
     color: #F0A126;
     padding: 10px 30px;
-    margin-left:5%; }
+    }
     .single-features .features-title-icon .features-btn:hover, .single-features .features-title-icon .features-btn:active {
     background: #F0A126 0% 0% no-repeat padding-box;
     box-shadow: -3px 3px 7px #EAEAEA;
@@ -2667,7 +2667,7 @@ margin-top:20px;}
     letter-spacing: 0px;
     color: #FFFFFF;
     padding: 10px 30px;
-    margin-left:5%; }
+     }
 
     @media (max-width: 767px) {
       .single-features{
@@ -2686,9 +2686,7 @@ margin-top:20px;}
       .single-features .features-content .text {
     font-size: 14px;
     }
-    .single-features .features-title-icon .features-btn{
-      margin-left:20%;
-    }
+    
       }
 
 /*===========================
@@ -2917,7 +2915,7 @@ margin-top:20px;}
       letter-spacing: 0px;
       color: #F0A126;
       padding: 10px 30px;
-      margin-left:15%; }
+      }
 
       .service-section .service-btn:hover, .service-section .service-btn:active {
       background: #F0A126 0% 0% no-repeat padding-box;
@@ -2928,7 +2926,7 @@ margin-top:20px;}
       letter-spacing: 0px;
       color: #FFFFFF;
       padding: 10px 30px;
-      margin-left:15%; }
+      }
 
 /*===========================
        15.ABOUT css 
