@@ -31,7 +31,7 @@ $(function() {
         var scrollbarLocation = $(this).scrollTop();
 
         scrollLink.each(function () {
-
+            
             var sectionOffset = $(this.hash).offset().top - 73;
 
             if (sectionOffset <= scrollbarLocation) {
@@ -115,7 +115,7 @@ $(function() {
     
     //===== Isotope Project 4
 
-    $('.container').imagesLoaded(function () {
+    /*$('.container').imagesLoaded(function () {
         var $grid = $('.grid').isotope({
             // options
             transitionDuration: '1s'
@@ -135,12 +135,12 @@ $(function() {
             $(this).addClass('active');
             event.preventDefault();
         });
-    });
+    });*/
     
     
     //===== slick Testimonial Four
     
-    $('.testimonial-active').slick({
+   /* $('.testimonial-active').slick({
         dots: false,
         arrows: true,
         prevArrow: '<span class="prev"><i class="lni lni-arrow-left"></i></span>',
@@ -150,12 +150,12 @@ $(function() {
         autoplaySpeed: 5000,
         speed: 800,
         slidesToShow: 1,
-    });
+    });*/
     
     
     //====== Magnific Popup
     
-    $('.video-popup').magnificPopup({
+    /*$('.video-popup').magnificPopup({
         type: 'iframe'
         // other options
     });
@@ -168,7 +168,7 @@ $(function() {
       gallery:{
         enabled:true
       }
-    });
+    });*/
     
     
     //===== Back to top

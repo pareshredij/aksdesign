@@ -139,15 +139,21 @@ p {
   color: #01173B;
   line-height:38px;
   padding: 30px 0 0 30px; }
-  @media (max-width: 767px) {
-    .section-title .title {
-      font-size: 30px;
-      line-height: 35px; } }
-.section-title .text {
+  .section-title .text {
   font-size: 21px;
   line-height: 24px;
   color: #5C5C5C;
   margin-top: 24px; }
+  @media (max-width: 767px) {
+    .section-title .title {
+      font-size: 16px;
+      line-height: 24px;
+      background-size: 70px; } 
+      .section-title .text {
+        font-size: 14px;
+        line-height: auto;}
+  }
+
 
 /*===== All Preloader Style =====*/
 .preloader {
@@ -2207,7 +2213,7 @@ p {
     .navbar-area .navbar .navbar-toggler .toggler-icon {
       width: 30px;
       height: 2px;
-      background-color: #fff;
+      background-color: #121212;
       margin: 5px 0;
       display: block;
       position: relative;
@@ -2245,6 +2251,9 @@ p {
         -moz-box-shadow: 0px 10px 25px 0px rgba(18, 18, 18, 0.05);
         box-shadow: 0px 10px 25px 0px rgba(18, 18, 18, 0.05); } }
     @media (max-width: 767px) {
+      .navbar-brand img{
+        width:95px;
+      }
       .navbar-area .navbar .navbar-collapse {
         position: absolute;
         top: 115%;
@@ -2442,13 +2451,10 @@ p {
   z-index: 9;
   padding-top: 280px;
   padding-bottom: 120px; }
-  @media (max-width: 767px) {
-    .slider-content {
-      padding-top: 190px;
-      padding-bottom: 150px; } }
+  
   .slider-content .title {
     font-size: 54px;
-    line-height: 96px;
+    
     color: #01173B;
     font-weight: 700; }
     .slider-content .sub-title {
@@ -2459,15 +2465,11 @@ p {
     @media only screen and (min-width: 992px) and (max-width: 1199px) {
       .slider-content .title {
         font-size: 54px;
-        line-height: 80px; } }
+         } }
     @media only screen and (min-width: 768px) and (max-width: 991px) {
       .slider-content .title {
         font-size: 54px;
-        line-height: 90px; } }
-    @media (max-width: 767px) {
-      .slider-content .title {
-        font-size: 34px;
-        line-height: 45px; } }
+         } }
   .slider-content .text {
     color: #01173B;
     font-size: 21px;
@@ -2478,6 +2480,23 @@ p {
     .slider-content .slider-btn li {
       display: inline-block;
       margin: 16px 8px 0; }
+      @media (max-width: 767px) {
+    .slider-content {
+      padding-top: 120px;
+      padding-bottom: 90px; } 
+      .slider-content .title {
+    font-size: 19px;
+    padding-bottom:8px; }
+    .slider-content .sub-title {
+      font-size: 13px;
+    }
+    .slider-content .text {
+      font-size: 11px;
+       margin-top: 8px;
+       line-height: 18px;
+       width:60%;
+    }
+    }
       @media (max-width: 767px) {
         .slider-content .slider-btn li {
           margin: 16px 3px 0; } }
@@ -2574,8 +2593,11 @@ p {
   padding-bottom:0px; }
 
 .single-features {
-  padding: 40px 20px 52px;
-  background-color: #fff; }
+  padding: 15px;
+  background-color: #fff; 
+  border: 1px solid #F1F1F1;
+border-radius: 5px;
+margin-top:20px;}
    .single-features .features-title-icon{
      padding-right:20px;
      width:40%;
@@ -2591,10 +2613,6 @@ p {
     transition: all 0.3s ease-out 0s;
     font-weight: 400; }
     @media only screen and (min-width: 992px) and (max-width: 1199px) {
-      .single-features .features-title-icon .features-title a {
-        font-size: 21px;
-        line-height: 35px; } }
-    @media (max-width: 767px) {
       .single-features .features-title-icon .features-title a {
         font-size: 21px;
         line-height: 35px; } }
@@ -2640,6 +2658,27 @@ p {
     color: #F0A126;
     padding: 10px 30px;
     margin-left:5%; }
+    @media (max-width: 767px) {
+      .single-features{
+        flex-direction: column;
+      }
+      .single-features .features-title-icon .features-title a {
+        font-size: 21px;
+        line-height: 35px; }
+        .single-features .features-title-icon{
+     padding-right:0px;
+     width:100%;
+   }
+   .single-features .features-content{
+        width: 100%;
+      } 
+      .single-features .features-content .text {
+    font-size: 14px;
+    }
+    .single-features .features-title-icon .features-btn{
+      margin-left:20%;
+    }
+      }
 
 /*===========================
       18.PORTFOLIO css 
@@ -2667,6 +2706,9 @@ p {
   overflow: hidden;
   margin-top: 4px;
   text-transform: uppercase; }
+  .portfolio-area .about-image{
+    margin-top:-180px;
+  }
   .portfolio-menu ul li:last-child {
     margin-right: 0; }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -2677,7 +2719,20 @@ p {
     .portfolio-menu ul li {
       font-size: 14px;
       padding: 0 22px;
-      line-height: 42px; } }
+      line-height: 42px; } 
+      .portfolio-area .about-content p{
+        font-size:14px;
+      }
+       .portfolio-area .about-image{
+        margin-top:0px;
+      }
+      .portfolio-area .about-image{
+        margin-top:-40px;
+      }
+      .portfolio-area .faq-content{
+        flex-direction: column-reverse;
+      }
+  }
   .portfolio-menu ul li::before {
     position: absolute;
     content: '';
@@ -2758,6 +2813,10 @@ p {
   padding-top: 0;
   padding-bottom: 0; }
 
+  .pricing-area .why-hire-image{
+    margin-top:-160px;
+  }
+
 /*===== PRICING STYLE NINE =====*/
 .pricing-style {
   -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
@@ -2810,7 +2869,11 @@ p {
       @media (max-width: 767px) {
         .pricing-style .pricing-list ul li {
           font-size: 14px;
-          margin-top: 12px; } }
+          margin-top: 12px; } 
+          .pricing-area .why-hire-image{
+            margin-top:0px;
+          }
+        }
       @media only screen and (min-width: 576px) and (max-width: 767px) {
         .pricing-style .pricing-list ul li {
           font-size: 16px;
@@ -2871,7 +2934,14 @@ p {
         font-size: 26px; } }
     @media (max-width: 767px) {
       .about-area .about-title .title {
-        font-size: 22px; } }
+        font-size: 16px; } 
+        .about-area .about-reverse{
+          flex-direction: column-reverse;
+        }
+        .why-hire-normal-content .text{
+          font-size: 14px;
+        }
+        }
   .about-area .about-accordion .accordion .card {
     border: 0;
     background: none; }
@@ -2935,7 +3005,11 @@ p.form-message.success, p.form-message.error {
   height: 550px; }
   @media (max-width: 767px) {
     .contact-map iframe {
-      height: 350px; } }
+      height: 350px; }
+    .contact-area {
+      padding-bottom: 20px;
+      }  
+    }
 
 .contact-info .single-contact-info .contact-info-icon i {
   width: 50px;
@@ -3006,7 +3080,16 @@ p.form-message.success, p.form-message.error {
       display: block; }
       @media (max-width: 767px) {
         .footer-area .footer-support span {
-          display: block; } }
+          display: block; } 
+          .footer-area .footer-logo{
+              position: relative;
+              right:0;
+              margin-top:0px;
+            }
+            .footer-area .footer-logo img{
+              width:60%;
+            }
+          }
   .footer-area .footer-app-store {
     padding-top: 27px; }
     .footer-area .footer-app-store ul li {
@@ -3038,7 +3121,7 @@ p.form-message.success, p.form-message.error {
   height: 45px;
   line-height: 45px;
   border-radius: 5px;
-  background-color: #0067f4;
+  background-color: #F25B1E;
   text-align: center;
   z-index: 99;
   -webkit-transition: all 0.3s ease-out 0s;
@@ -3049,6 +3132,6 @@ p.form-message.success, p.form-message.error {
   display: none; }
   .back-to-top:hover {
     color: #fff;
-    background-color: #0067f4; }
+    background-color: #F25B1E; }
 
 /*# sourceMappingURL=style.css.map */
