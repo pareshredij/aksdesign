@@ -2592,6 +2592,15 @@ p {
   /*background-color: #f4f6f7;*/
   padding-top: 0px;
   padding-bottom:0px; }
+  .features-area .section-title .title{
+    background-image:none;
+  }
+  .features-area .section-title .title img{
+    position: absolute;
+     margin-left: -24px;
+    top: 0px;
+    z-index: -1;
+  }
 
 .single-features {
   padding: 15px;
@@ -2670,6 +2679,13 @@ margin-top:20px;}
      }
 
     @media (max-width: 767px) {
+      .features-area .section-title .title img{
+        position: absolute;
+    margin-left: -24px;
+    top: 20px;
+    z-index: -1;
+    width: 48px;
+      }
       .single-features{
         flex-direction: column;
       }
