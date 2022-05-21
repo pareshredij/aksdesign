@@ -25,7 +25,8 @@ body {
   font-weight: normal;
   font-style: normal;
   color: #121212;
-  background: no-repeat url("../images/bg.png"); }
+  background: no-repeat url("../images/bg.jpg"); 
+  background-size: contain;}
 
 * {
   margin: 0;
