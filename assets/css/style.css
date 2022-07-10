@@ -2444,7 +2444,7 @@ p {
     right: 0;
     width: 50%;
     height: 100%;
-    z-index: 9; }
+    z-index: -1; }
     .carousel-item .slider-image-box .slider-image {
       max-width: 680px;
       width: 100%; }
@@ -2496,7 +2496,7 @@ p {
       font-size: 11px;
        margin-top: 8px;
        line-height: 18px;
-       width:60%;
+       width:50%;
     }
     }
       @media (max-width: 767px) {
@@ -3167,5 +3167,32 @@ margin-top:20px;}
   .back-to-top:hover {
     color: #fff;
     background-color: #F25B1E; }
+
+    .view2D .modal-body, .view2D .modal-body .container-fluid{
+      padding:0;
+    }
+    .view2D .modal-body .container{
+      padding:20px;
+    }
+
+    .view2D .carousel{
+      padding-bottom: 50px;
+    }
+
+    .view2D .carousel-indicators{
+      margin: 0px 0 20px 0;
+    }
+
+    .view2D .carousel-indicators li{
+      text-indent: 0;
+      height: auto;
+      width:24px;
+      color:#FFFFFF;
+      background: #FDB62B;
+      text-align: center;
+    }
+    .view2D .carousel-indicators li.acive{
+      background: #F25B1E;
+    }
 
 /*# sourceMappingURL=style.css.map */
